@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>借款申请页面</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .client-info {
+            font-size: 1.2rem;
+        }
+
+        .highlight {
+            background-color: yellow;
+            display: inline;
+        }
+
+        .amount {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .white-box {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .bold-bigger {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .left-box {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        #clientName {
+            font-size: 1.2rem;
+        }
+
+        .info-box {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* 新增样式 */
+        #greeting {
+            font-weight: bold;
+        }
+
+        #advice {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        #warning {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #warning span {
+            background-color: rgb(253, 223, 197);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>借款申请</h1>
+        <p class="client-info" id="greeting"><span style="font-weight: bold">尊敬的</span> <span id="clientName">沈岱</span>：</p>
+        <p>根据您经营的【<span id="companyName">汕头市澄海区星宇工艺玩具有限公司</span>】</p>
+        <p id="advice"><span style="font-weight: bold">基本条件符合我行产品准入，请在3个工作日联系客户经理办理，逾期将15个工作日即可重新受理</span></p>
+        <div id="warning">
+            <p><span style="background-color: rgb(253, 223, 197)">*请您自行评估负债情况及偿还能力，理性借贷</span></p>
+        </div>
+        <div class="info-box">
+            <p>可申请额度（元）：<span id="loanAmount" class="amount">682,000</span></p>
+            <p>额度展示以60期为例，调整借款期限将影响额度；后续可能根据</p>
+            <p>您的资质情况调整额度</p>
+        </div>
+        <div class="info-box center">
+            <p>初审通过！</p>
+            <p>可申请额度：<span id="loanAmount2" class="amount">682,000</span>元，</p>
+            <p>请尽快完成方案确认及后续操作</p>
+        </div>
+        <div class="left-box">
+            <p class="bold-bigger">请联系网点经理预约办理</p>
+            <p>贷款金额会根据您的进件条件作为最终的审核结果</p>
+            <p>请尽快再规定时间内确认方案</p>
+        </div>
+    </div>
+</body>
+</html>
